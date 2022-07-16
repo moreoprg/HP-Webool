@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* 採用情報 */
+
+/* recruit-top */
+.recruit-kv {
+  background: linear-gradient(
+      to bottom,
+      rgba(45, 96, 158, 0.7),
+      rgba(18, 94, 183, 0.5)
+    ),
+    url(../img/recruit.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.message-desc {
+  font-size: 1.5rem;
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  .message-desc {
+    font-size: 1.2rem;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 480px) {
+  .message-desc {
+    font-size: 1rem;
+  }
+}

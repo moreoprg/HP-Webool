@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/* company-top */
+
+.company-kv {
+  background: linear-gradient(
+      to bottom,
+      rgba(45, 96, 158, 0.7),
+      rgba(141, 186, 239, 0.7)
+    ),
+    url(../img/company.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* message */
+.company-message {
+  padding-bottom: 10%;
+}
+
+.message-txt {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.message-txt .font3 {
+  font-weight: bold;
+}
+
+.message-desc {
+  font-size: 1.4rem;
+  padding-top: 3%;
+}
+
+/* outline */
+.company-outline {
+  padding-bottom: 8%;
+}
+
+.overview {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.overview-list {
+  width: 55%;
+}
+
+.overview-item {
+  display: flex;
+  line-height: 2;
+  padding-top: 3%;
+  font-size: 1.2rem;
+}
+
+.overview-item h4 {
+  font-weight: normal;
+  width: 9rem;
+}
+.overview-item p {
+  font-weight: bold;
+}
+
+.overview-item small {
+  border-left: 3px solid #000;
+  padding-right: 5%;
+}
+
+.overview-item + .overview-item {
+  margin-top: 5%;
+}
+
+.overview-img-box {
+  width: 45%;
+  padding-top: 1%;
+}
+
+/* access */
+.access-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+
+.map {
+  width: 56%;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.access-info {
+  width: 40%;
+}
+
+.access-info p {
+  font-size: 1.4rem;
+}
+
+.access-item {
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  /* outline */
+  .overview {
+    display: block;
+  }
+
+  .overview-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .overview-img-box {
+    width: 100%;
+  }
+
+  .overview-img {
+    width: 100%;
+    height: 450px;
+  }
+
+  .overview-img img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .overview-img-box {
+    padding-top: 5%;
+  }
+
+  /* access */
+  iframe {
+    height: 300px;
+  }
+
+  .access-info p {
+    font-size: 1rem;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 480px) {
+  /* message */
+  .message-desc {
+    font-size: 0.85rem;
+  }
+
+  /* outline */
+  .overview-item {
+    font-size: 0.8rem;
+  }
+
+  .overview-item h4 {
+    width: 6rem;
+  }
+
+  .overview-img {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* access */
+  .access-inner {
+    display: block;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .access-way-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .access-info {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .access-info p {
+    font-size: 1rem;
+  }
+
+  .nearest-station {
+    width: 34%;
+  }
+
+  .access-way {
+    width: 64%;
+  }
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>株式会社Webool ｜経営・事業をサポートするホームページ制作会社</title>
+    <meta
+      name="description"
+      content="企業とユーザーをつなぐ大事なツール。魅力ある、愛されるホームページを提供し、勝てる経営を徹底サポートします。"
+    />
+    <meta name="keywords" content="web制作、ホームページ制作" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="株式会社Webool ｜経営・事業をサポートするホームページ制作会社"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://withcode-plus.tech" />
+    <meta property="og:image" content="img/logo.png" />
+    <meta
+      property="og:description"
+      content="企業とユーザーをつなぐ大事なツール。魅力ある、愛されるホームページを提供し、勝てる経営を徹底サポートします。"
+    />
+    <meta
+      property="og:site_name"
+      content="株式会社Webool ｜経営・事業をサポートするホームページ制作会社"
+    />
+    <!--  favicon -->
+    <link rel="icon" href="../favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- cssファイル -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common1.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common2.css" />
+    <link rel="stylesheet" type="text/css" href="../css/contact.css" />
+  </head>
+
+  <body>
+    <div id="contact" class="contact-kv page-top-kv">
+      <header class="header wrapper">
+        <div class="header-logo">
+          <a href="../index.html">
+            <div class="header-logo_img">
+              <img src="../img/logo.png" alt="会社ロゴ" />
+            </div>
+
+            <h1 class="company-name">Webool</h1>
+          </a>
+        </div>
+        <div class="header-nav">
+          <nav>
+            <ul class="header-nav_list">
+              <li><a href="company.html">会社概要</a></li>
+              <li><a href="service.html">事業紹介</a></li>
+              <li><a href="works.html">制作実績</a></li>
+              <li><a href="recruit.html">採用情報</a></li>
+              <li><a href="contact.html" class="border">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- ハンバーガーメニュー -->
+        <div class="drawer"></div>
+      </header>
+      <div class="page-top-content">
+        <h2 class="page-top-ttl font1">CONTACT</h2>
+        <small>お問い合わせ</small>
+        <p class="page-top-txt">
+          ご依頼やご相談、サービスについてのご質問やご要望がございましたら、お気軽にお問い合わせください。<br
+            class="br-sp"
+          />
+          送付いただいた内容を確認の上、担当者からご連絡させていただきます。
+        </p>
+      </div>
+    </div>
+
+    <main class="bgc-gray">
+      <section class="contact-form wrapper">
+        <div class="procedure-box">
+          <ul class="procedure-list">
+            <li class="procedure-item">入力</li>
+            <li class="procedure-item gray-box">確認</li>
+            <li class="procedure-item gray-box">完了</li>
+          </ul>
+        </div>
+        <!-- お問合せボックス -->
+        <form
+          action="mail.php"
+          class="recruit-form form-inner"
+          id="recruit-form"
+          method="POST"
+        >
+          <div class="form-item">
+            <label for="require" class="form-item_name form-item-primary"
+              >ご用件：
+            </label>
+            <div class="form-box">
+              <select id="require" class="require-box">
+                <option value="">お問合せ内容を選択</option>
+                <option value="require1">
+                  お問い合わせ（電話や打ち合わせの前に確認したいことがある方）
+                </option>
+                <option value="require2">
+                  お打ち合わせ依頼（とりあえず話を聞いてみたい新規の方）
+                </option>
+                <option value="require3">
+                  見積り依頼（おおよその制作費用が知りたい方）
+                </option>
+                <option value="require4">
+                  その他（備考欄にお問合せ内容をご記入ください）
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-item">
+            <label for="name" class="form-item_name form-item-primary"
+              >氏名：
+            </label>
+            <div class="form-box">
+              <input
+                type="text"
+                class="form-txt"
+                name="名前"
+                placeholder="例）山田　太郎"
+                id="name"
+              />
+            </div>
+          </div>
+          <div class="form-item">
+            <label class="form-item_name form-item-option hp-option"
+              >ホームページ：
+            </label>
+            <div class="form-box">
+              <input
+                type="text"
+                class="form-txt"
+                name="website"
+                placeholder="例）https://webool.com"
+              />
+            </div>
+          </div>
+
+          <div class="form-item">
+            <label for="tel" class="form-item_name form-item-primary"
+              >電話番号：
+            </label>
+            <div class="form-box">
+              <input
+                type="tel"
+                class="form-txt"
+                name="電話"
+                placeholder="例）0001234000(ハイフンなし)"
+                id="tel"
+              />
+            </div>
+          </div>
+
+          <div class="form-item">
+            <label for="email" class="form-item_name form-item-primary"
+              >メールアドレス：
+            </label>
+            <div class="form-box">
+              <input
+                type="email"
+                class="form-txt"
+                name="メール"
+                placeholder="例）abd@sample.com"
+                id="email"
+              />
+            </div>
+          </div>
+
+          <div class="form-item">
+            <label for="comment" class="form-item_name form-item-option"
+              >備考：
+            </label>
+            <div class="form-box">
+              <textarea
+                name="備考"
+                id="comment"
+                class="form-textarea"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-btn-area">
+            <input type="submit" class="form-btn" value="入力内容を確認する" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-logo">
+          <a href="../index.html">
+            <div class="footer-logo_img">
+              <img src="../img/logo.png" alt="会社ロゴ" />
+            </div>
+
+            <h1 class="company-name">Webool</h1>
+          </a>
+        </div>
+        <div class="footer-inner">
+          <div class="footer-company-info">
+            <p>
+              〒xxx-xxxx <br />
+              埼玉県大宮市xxxx-xxx
+            </p>
+            <p>
+              TEL：xxx-xxxx-xxx <br />
+              FAX：xxx-xxxx-xxx
+            </p>
+          </div>
+          <div class="footer-nav">
+            <ul class="footer-nav_list">
+              <li class="footer-nav_item">
+                <small></small><a href="../index.html">HOME</a>
+              </li>
+              <li class="footer-nav_item">
+                <small></small><a href="service.html">事業紹介</a>
+              </li>
+              <li class="footer-nav_item">
+                <small></small><a href="#">お問い合わせ</a>
+              </li>
+            </ul>
+            <ul class="footer-nav_list">
+              <li class="footer-nav_item">
+                <small></small><a href="company.html">会社概要</a>
+              </li>
+              <li class="footer-nav_item">
+                <small></small><a href="recruit.html">採用情報</a>
+              </li>
+              <li class="footer-nav_item">
+                <div class="sns-list">
+                  <div class="insta-icon">
+                    <a href="index.html">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                  <div class="twitter-icon">
+                    <a
+                      href="https://mobile.twitter.com/moreoweb/status/1513976730192871425"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <small>Copyright © Webool Co., Ltd. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+  </body>
+</html>

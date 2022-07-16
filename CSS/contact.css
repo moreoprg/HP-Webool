@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* お問合せ */
+
+/* contact-top */
+.contact-kv {
+  background: linear-gradient(
+      to bottom,
+      rgba(105, 165, 235, 0.9),
+      rgba(6, 77, 160, 0.3)
+    ),
+    url(../img/logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.procedure-box {
+  padding-top: 8rem;
+}
+
+.procedure-list {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.procedure-item {
+  position: relative;
+}
+
+.procedure-item::before {
+  content: "";
+  top: -3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 2rem;
+  height: 2rem;
+  background: #1a7ff4;
+  position: absolute;
+  z-index: 5;
+}
+
+.procedure-item.gray-box::before {
+  background: #8d939b;
+}
+
+/* お問合せフォーム */
+.require-box {
+  width: 100%;
+  height: 100%;
+}
+
+.hp-option::after {
+  top: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .require-box {
+    height: 3rem;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 480px) {
+  .procedure-box {
+    padding-top: 5rem;
+  }
+
+  .procedure-list {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .procedure-item::before {
+    top: -2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .require-box {
+    height: 2rem;
+  }
+}

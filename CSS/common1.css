@@ -1,0 +1,481 @@
+@charset "UTF-8";
+/* 共通 */
+
+body {
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #000;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* 共通指定 */
+/* フォントサイズ */
+.font1 {
+  font-size: 5rem;
+}
+
+.font2 {
+  font-size: 4rem;
+}
+
+.font3 {
+  font-size: 3rem;
+}
+
+.font4 {
+  font-size: 2rem;
+}
+
+/* 画面幅 */
+.wrapper {
+  margin: 0 auto;
+  padding: 0 5%;
+  max-width: 1300px;
+}
+
+/* 背景色 */
+.bgc-blue {
+  background: linear-gradient(
+    to bottom,
+    rgba(238, 240, 241, 1),
+    rgba(125, 179, 243, 1)
+  );
+}
+
+/* header */
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  height: 60px;
+  width: 35%;
+}
+
+.header-logo_img {
+  width: 60px;
+  height: 60px;
+}
+
+.header-logo a {
+  display: inline-block;
+  display: flex;
+}
+
+.company-name {
+  color: #fff;
+  display: inline-block;
+  font-size: 32px;
+  padding-left: 15px;
+}
+
+.header-nav {
+  width: 65%;
+}
+
+.header-nav_list {
+  display: flex;
+  font-size: 1rem;
+  height: 60px;
+  line-height: 60px;
+  justify-content: flex-end;
+}
+
+.header-nav_list li {
+  margin-left: 10px;
+}
+
+.header-nav_list li a {
+  color: #fff;
+}
+
+.header-nav_list li a:hover {
+  opacity: 0.6;
+  color: #253af0;
+}
+
+.header-nav_list li .border {
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.6);
+}
+
+.header-nav_list li .border:hover {
+  border-bottom: 1px solid #253af0;
+}
+
+/* section共通 */
+.sec-ttl {
+  line-height: 0.8;
+  padding-top: 5%;
+}
+
+/* 画面背景 */
+.bgc-gray {
+  background: #eef0f1;
+}
+
+/* top画面テキストサイズ */
+.page-top-txt {
+  font-size: 1.8rem;
+  padding-top: 2%;
+}
+
+/* footer */
+.footer {
+  background: #343333;
+  color: #fff;
+  padding-bottom: 3%;
+}
+
+.footer-logo {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+.footer-logo_img {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-logo a {
+  display: inline-block;
+  display: flex;
+}
+
+.footer-inner {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.footer-company-info {
+  width: 40%;
+  padding-left: 5%;
+}
+
+.footer-company-info p:first-child {
+  margin-bottom: 5%;
+}
+
+.footer-nav {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+}
+
+.footer-nav_list {
+  width: 50%;
+}
+
+.footer-nav_list:first-child {
+  margin-right: 15%;
+}
+
+.footer-nav_item + .footer-nav_item {
+  margin-top: 15%;
+}
+
+.footer-nav_item a {
+  color: #fff;
+}
+
+.footer-nav_item small {
+  border-left: 3px solid rgba(245, 245, 245, 0.5);
+  padding-right: 5%;
+}
+
+.footer-nav_item a:hover {
+  opacity: 0.7;
+}
+
+/* footer-sns-icon */
+.sns-list {
+  display: flex;
+}
+
+.fab {
+  font-size: 3rem;
+}
+
+.insta-icon {
+  margin-right: 10%;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #fff;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 98%;
+  margin: 0 auto;
+}
+
+/* レスポンシブ_タブレット */
+
+@media screen and (max-width: 768px) {
+  /* font-size */
+  .font1 {
+    font-size: 3rem;
+  }
+
+  .font2 {
+    font-size: 2.5rem;
+  }
+
+  .font3 {
+    font-size: 1.8rem;
+  }
+
+  .font4 {
+    font-size: 1.5rem;
+  }
+
+  /*ハンバーガーメニュー  */
+  header .drawer {
+    visibility: visible;
+    width: 30px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-top: solid 3px #fff;
+    cursor: pointer;
+    z-index: 500;
+  }
+
+  header .drawer::before,
+  header .drawer::after {
+    content: "";
+    display: block;
+    width: 30px;
+    background: #fff;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.6s;
+  }
+
+  header .drawer::before {
+    top: 7px;
+  }
+
+  header .drawer::after {
+    top: 17px;
+  }
+
+  header .header-nav {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(18, 94, 183, 1);
+    color: #000;
+    text-align: center;
+    padding-top: 20%;
+  }
+
+  header .header-nav_list {
+    display: block;
+  }
+
+  header .header-nav_list li {
+    margin: 5% auto;
+  }
+
+  header .header-nav_list li a {
+    line-height: 3;
+    font-size: 1.75rem;
+  }
+
+  body.nav-open header .drawer {
+    border-top: 0;
+  }
+
+  body.nav-open header .drawer::before {
+    top: 9px;
+    transform: rotate(-45deg);
+  }
+
+  body.nav-open header .drawer::after {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+
+  .header-logo {
+    width: 60%;
+  }
+
+  .header-nav {
+    width: 40%;
+  }
+
+  /* top画面テキストサイズ */
+  .page-top-txt {
+    font-size: 1.4rem;
+  }
+
+  /* footer */
+  .footer-inner {
+    font-size: 0.9rem;
+  }
+
+  .fab {
+    font-size: 2rem;
+  }
+
+  .copyright {
+    font-size: 0.6rem;
+  }
+}
+
+/* sp */
+@media screen and (max-width: 480px) {
+  /* font-size */
+  .font1,
+  .font2 {
+    font-size: 1.8rem;
+  }
+
+  .font3 {
+    font-size: 1.2rem;
+  }
+
+  .font4 {
+    font-size: 1rem;
+  }
+
+  /* header */
+  .header-logo_img,
+  .footer-logo_img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-logo {
+    display: flex;
+    height: 40px;
+  }
+
+  .header-logo_img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .company-name {
+    color: #fff;
+    display: inline-block;
+    font-size: 22px;
+    padding-left: 15px;
+  }
+
+  .header-nav_list {
+    display: flex;
+    font-size: 1rem;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  /*ハンバーガーメニュー  */
+  header .drawer {
+    width: 24px;
+    top: 15px;
+    right: 20px;
+  }
+
+  header .drawer::before,
+  header .drawer::after {
+    width: 24px;
+  }
+
+  header .drawer::before {
+    top: 6px;
+  }
+
+  header .drawer::after {
+    top: 15px;
+  }
+
+  .page-top-txt {
+    font-size: 0.85rem;
+  }
+
+  /* footer */
+
+  .footer-inner {
+    font-size: 0.75rem;
+    display: block;
+    padding-top: unset;
+  }
+
+  .footer-company-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  .footer-nav {
+    display: block;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .footer-nav_list {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer-nav_list + .footer-nav_list {
+    padding-top: 5%;
+  }
+
+  .footer-nav_item {
+    width: calc(90% / 3);
+    margin: 0 auto;
+  }
+
+  .footer-nav_item + .footer-nav_item {
+    margin-top: unset;
+  }
+
+  .fab {
+    font-size: 1.3rem;
+  }
+
+  .copyright {
+    font-size: 0.5rem;
+  }
+}
