@@ -141,14 +141,15 @@ img {
 .page-top-txt {
   font-size: 1.8rem;
   padding-top: 2%;
-  line-height: 2.6rem;
+  line-height: 3.5rem;
 }
+
+
 
 /* footer */
 .footer {
   background: #343333;
   color: #fff;
-  padding-bottom: 3%;
 }
 
 .footer-logo {
@@ -354,6 +355,10 @@ img {
   .page-top-txt {
     font-size: 1.4rem;
     line-height: 1.8rem;
+  }
+
+  .page-top-txt span{
+    display: inline-block;
   }
 
   /* footer */
