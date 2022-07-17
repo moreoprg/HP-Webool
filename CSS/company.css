@@ -5,8 +5,8 @@
 .company-kv {
   background: linear-gradient(
       to bottom,
-      rgba(45, 96, 158, 0.7),
-      rgba(141, 186, 239, 0.7)
+      rgba(7, 37, 73, 0.5),
+      rgba(18, 94, 183, 0.5)
     ),
     url(../img/company.png);
   background-size: cover;
