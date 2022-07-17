@@ -75,21 +75,28 @@
   width: 90%;
   margin: 0 auto;
   margin-top: 3rem;
-  padding-bottom: 5%;
+  padding-bottom: 4rem;
 }
 
 .form-item {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.form-item-bg {
+  height: 8rem;
 }
 
 .form-item_name {
   font-weight: bold;
   text-align: right;
   font-size: 1.3rem;
-  width: 28%;
+  width: 26%;
+  padding-right: 1rem;
 }
 
 .form-item-primary,
@@ -101,12 +108,12 @@
   content: "必須";
   position: absolute;
   top: 50%;
-  right: -5rem;
+  right: -3rem;
   transform: translateY(-50%) translateX(0);
   text-align: center;
-  width: 5rem;
+  width: 4rem;
   line-height: 2.5;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #fff;
   background: #1a7ff4;
   border-radius: 20px;
@@ -116,12 +123,12 @@
   content: "任意";
   position: absolute;
   top: 20%;
-  right: -5rem;
+  right: -3rem;
   transform: translateY(-50%) translateX(0);
   text-align: center;
-  width: 5rem;
+  width: 4rem;
   line-height: 2.5;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #fff;
   background: #8d939b;
   border-radius: 20px;
@@ -129,7 +136,7 @@
 
 .form-box {
   vertical-align: middle;
-  width: 56%;
+  width: 64%;
 }
 
 .form-input-select {
@@ -141,20 +148,23 @@ option {
   border: none;
   border-radius: 5px;
   height: 2rem;
+ 
 }
 
 .form-input-select + .form-input-select {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
+
 .year-box {
-  width: 5rem;
+  width: 4.5rem;
 }
 
 .month-box,
 .day-box {
-  width: 3.5rem;
+  width: 3.3rem;
 }
+
 .year-box,
 .month-box,
 .day-box {
@@ -166,7 +176,8 @@ option {
 }
 
 .select-label {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  line-height: 3rem;
 }
 
 .form-txt {
@@ -177,8 +188,9 @@ option {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  height: 98%;
+  height: 3rem;
   border-radius: 10px;
+  font-size: 1.1rem;
 }
 
 .form-textarea {
@@ -189,7 +201,7 @@ option {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  height: 6rem;
+  height: 8rem;
   border-radius: 10px;
 }
 
@@ -251,9 +263,6 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 768px) {
-  .br-sp {
-    display: none;
-  }
   /* page-top */
   .page-top-kv {
     height: 500px;
@@ -279,11 +288,26 @@ input[type="checkbox"] {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    height: unset;
+    line-height: 2rem;
+  }
+
+  .form-item_name {
+    padding-right: unset;
+  }
+
+  .form-item-primary::after,
+  .form-item-option::after {
+    right: -3rem;
+    width: 3rem;
+    line-height: 2;
+    font-size: 0.6rem;
   }
 
   .form-box {
     width: 100%;
     margin-top: 1%;
+  
   }
 
   .form-item-option::after {
@@ -294,13 +318,41 @@ input[type="checkbox"] {
     font-size: 1.2rem;
   }
   .form-txt {
-    height: 3rem;
+    font-size: 1rem;
   }
 
   .form-txt,
   .form-textarea {
     width: 100%;
   }
+
+  select,
+  option {
+    font-size: 1rem;
+    height: 2rem;
+    line-height: 2rem;
+  }
+
+  .year-box,
+.month-box,
+.day-box {
+  font-size: 1rem;
+}
+
+  .form-input-select + .form-input-select {
+    margin-left: 0.5rem;
+  }
+
+  .form-input-select{
+    height: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .select-label{
+    line-height: 2.5rem;
+  }
+
+
 }
 
 /* sp */
@@ -325,6 +377,10 @@ input[type="checkbox"] {
   }
 
   /* contact-form */
+  .form-item {
+    line-height: 1rem;
+  }
+
   .form-item_name {
     font-size: 1rem;
     font-weight: 500;
@@ -338,6 +394,11 @@ input[type="checkbox"] {
     font-size: 0.6rem;
   }
 
+  .form-box {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
   .check-item {
     font-size: 1rem;
   }
@@ -348,35 +409,51 @@ input[type="checkbox"] {
 
   .form-txt {
     height: 2rem;
+    font-size: 0.7rem;
   }
+
   .form-textarea {
     height: 5rem;
   }
 
   .form-input-select + .form-input-select {
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
   }
 
+  .form-input-select{
+    height: 1rem;
+    line-height: 1rem;
+  }
+
+  .select-label{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+
+
   .year-box {
-    width: 4rem;
+    width: 3.4rem;
   }
 
   .month-box,
   .day-box {
-    width: 2rem;
+    width: 2.4rem;
   }
   .year-box,
   .month-box,
   .day-box {
     font-size: 0.85rem;
-    height: 1.5rem;
   }
 
-  .select-label {
-    margin-left: 0.6rem;
-    font-size: 1rem;
-    line-height: 2;
+  select,
+  option {
+    height: 1.5rem;
+    line-height: 1.5rem;
   }
+
+
 
   /* 送信ボタン */
   .form-btn-area {
@@ -397,4 +474,6 @@ input[type="checkbox"] {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+
+
 }

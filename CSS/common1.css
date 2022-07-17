@@ -73,7 +73,7 @@ img {
 .header-logo {
   display: flex;
   height: 60px;
-  width: 35%;
+  width: 30%;
 }
 
 .header-logo_img {
@@ -90,23 +90,23 @@ img {
   color: #fff;
   display: inline-block;
   font-size: 32px;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .header-nav {
-  width: 65%;
+  width: 70%;
 }
 
 .header-nav_list {
   display: flex;
-  font-size: 1rem;
+  font-size: 0.85rem;
   height: 60px;
   line-height: 60px;
   justify-content: flex-end;
 }
 
 .header-nav_list li {
-  margin-left: 10px;
+  margin-left: 2rem;
 }
 
 .header-nav_list li a {
@@ -141,6 +141,7 @@ img {
 .page-top-txt {
   font-size: 1.8rem;
   padding-top: 2%;
+  line-height: 2.6rem;
 }
 
 /* footer */
@@ -259,6 +260,11 @@ img {
     font-size: 1.5rem;
   }
 
+  /* 改行 */
+  .br-sp {
+    display: none;
+  }
+
   /*ハンバーガーメニュー  */
   header .drawer {
     visibility: visible;
@@ -282,6 +288,7 @@ img {
     top: 0;
     right: 0;
     transition: all 0.6s;
+    
   }
 
   header .drawer::before {
@@ -296,22 +303,24 @@ img {
     position: fixed;
     display: none;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     z-index: 100;
     background: rgba(18, 94, 183, 1);
     color: #000;
     text-align: center;
-    padding-top: 20%;
   }
 
   header .header-nav_list {
     display: block;
+  padding: 25% 0;
   }
 
   header .header-nav_list li {
-    margin: 5% auto;
+    margin: 2% auto;
+    text-align: center;
+ 
   }
 
   header .header-nav_list li a {
@@ -344,12 +353,17 @@ img {
   /* top画面テキストサイズ */
   .page-top-txt {
     font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 
   /* footer */
   .footer-inner {
     font-size: 0.9rem;
   }
+
+  .footer-nav_list:first-child {
+    margin-right: 10%;
+}
 
   .fab {
     font-size: 2rem;
@@ -465,6 +479,7 @@ img {
   .footer-nav_item {
     width: calc(90% / 3);
     margin: 0 auto;
+    font-size: 0.6rem;
   }
 
   .footer-nav_item + .footer-nav_item {
