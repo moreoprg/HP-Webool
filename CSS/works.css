@@ -22,12 +22,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
 }
 
 .works-item {
   width: 30%;
   height: auto;
   margin-bottom: 3rem;
+}
+
+.works-img img {
+  width: 100%;
+  height: auto;
 }
 
 .works-img:hover {
@@ -40,6 +46,7 @@
   font-weight: 500;
   font-size: 1.2rem;
   padding-top: 0.5rem;
+  display: none;
 }
 
 /* tablet */
