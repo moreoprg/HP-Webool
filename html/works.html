@@ -63,12 +63,29 @@
 
     <!-- cssファイル -->
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+
     <link rel="stylesheet" type="text/css" href="../css/common1.css" />
     <link rel="stylesheet" type="text/css" href="../css/common2.css" />
     <link rel="stylesheet" type="text/css" href="../css/works.css" />
+    <!-- jq読み込ませ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
+    <!-- ローディングアニメーション -->
+    <div id="loading-wrapper">
+      <div id="loading-text">LOADING</div>
+      <div id="loading-content"></div>
+    </div>
     <div id="works" class="works-kv page-top-kv">
       <header class="header wrapper">
         <div class="header-logo">
@@ -108,7 +125,7 @@
       <section class="works wrapper">
         <div class="works-content">
           <ul class="works-list">
-            <li class="works-item">
+            <li class="works-item works-show">
               <a href="#" class="works-item_link">
                 <div class="works-img">
                   <img src="../img/works1.png" alt="ファッションサイト" />
@@ -118,7 +135,7 @@
                 </div>
               </a>
             </li>
-            <li class="works-item">
+            <li class="works-item works-show">
               <a href="#" class="works-item_link">
                 <div class="works-img">
                   <img src="../img/works2.png" alt="ファッションサイト" />
@@ -128,7 +145,7 @@
                 </div>
               </a>
             </li>
-            <li class="works-item">
+            <li class="works-item works-show">
               <a href="#" class="works-item_link">
                 <div class="works-img">
                   <img src="../img/works3.png" alt="ファッションサイト" />
@@ -138,7 +155,7 @@
                 </div>
               </a>
             </li>
-            <li class="works-item">
+            <li class="works-item works-show">
               <a href="#" class="works-item_link">
                 <div class="works-img">
                   <img src="../img/works1.png" alt="ファッションサイト" />
@@ -148,7 +165,7 @@
                 </div>
               </a>
             </li>
-            <li class="works-item">
+            <li class="works-item works-show">
               <a href="#" class="works-item_link">
                 <div class="works-img">
                   <img src="../img/works2.png" alt="ファッションサイト" />
@@ -158,7 +175,7 @@
                 </div>
               </a>
             </li>
-            <li class="works-item">
+            <li class="works-item works-show">
               <a href="#" class="works-item_link">
                 <div class="works-img">
                   <img src="../img/works3.png" alt="ファッションサイト" />
@@ -241,7 +258,12 @@
     </footer>
 
     <!-- js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+
     <script type="text/javascript" src="../js/common.js"></script>
   </body>
 </html>

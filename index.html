@@ -63,11 +63,33 @@
 
     <!-- cssファイル -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+    <!-- slick -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+
     <link rel="stylesheet" type="text/css" href="css/common1.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <!-- jq読み込ませ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
+    <!-- ローディングアニメーション -->
+    <div id="loading-wrapper">
+      <div id="loading-text">LOADING</div>
+      <div id="loading-content"></div>
+    </div>
+    <!-- home -->
     <div id="home" class="home-kv">
       <header class="header wrapper">
         <div class="header-logo">
@@ -100,7 +122,7 @@
         </h2>
         <p>
           企業とユーザーをつなぐ大事なツール。<br />
-          魅力ある、愛されるホームページを提供し、 <br class="br-sp">
+          魅力ある、愛されるホームページを提供し、 <br class="br-sp" />
           勝てる経営を徹底サポートします。
         </p>
       </div>
@@ -108,36 +130,46 @@
 
     <!-- works -->
     <main class="bgc-gray">
-      <section id="works" class="works wrapper ">
+      <section id="works" class="works wrapper">
         <h3 class="sec-ttl font2">Works <br /><small>制作実績</small></h3>
         <p class="page-top-txt">
           お客様の悩みを解決し、ユーザーに響く魅力あるサイトを制作。<br />
           顧客集客に繋がるホームページを一緒に創造し、ご提供いたします。
         </p>
         <div class="works-content">
-          <ul class="works-list">
+          <ul class="works-list works-slide">
             <li class="works-item">
               <a href="html/works.html" class="works-item_link">
-                <div class="works-img">
-                  <img src="img/works1.png" alt="ファッションサイト" />
-                </div>
+                <img src="img/works1.png" alt="ファッションサイト" />
               </a>
             </li>
             <li class="works-item">
               <a href="html/works.html" class="works-item_link">
-                <div class="works-img">
-                  <img src="img/works2.png" alt="ファッションサイト" />
-                </div>
+                <img src="img/works2.png" alt="ファッションサイト" />
               </a>
             </li>
             <li class="works-item">
               <a href="html/works.html" class="works-item_link">
-                <div class="works-img">
-                  <img src="img/works3.png" alt="ファッションサイト" />
-                </div>
+                <img src="img/works3.png" alt="ファッションサイト" />
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="html/works.html" class="works-item_link">
+                <img src="img/works1.png" alt="ファッションサイト" />
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="html/works.html" class="works-item_link">
+                <img src="img/works2.png" alt="ファッションサイト" />
+              </a>
+            </li>
+            <li class="works-item">
+              <a href="html/works.html" class="works-item_link">
+                <img src="img/works3.png" alt="ファッションサイト" />
               </a>
             </li>
           </ul>
+
           <div class="works-btn">
             <a href="html/works.html" class="works-btn_link">制作実績一覧</a>
           </div>
@@ -145,7 +177,7 @@
       </section>
 
       <!-- link -->
-      <section class=" page-link bgc-blue">
+      <section class="page-link bgc-blue">
         <div class="page-link_inner wrapper">
           <div class="company-link link-item">
             <a href="html/company.html"
@@ -245,7 +277,10 @@
     </footer>
 
     <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
     <script type="text/javascript" src="js/common.js"></script>
   </body>
 </html>

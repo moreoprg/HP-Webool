@@ -67,9 +67,17 @@
     <link rel="stylesheet" type="text/css" href="../css/common1.css" />
     <link rel="stylesheet" type="text/css" href="../css/common2.css" />
     <link rel="stylesheet" type="text/css" href="../css/service.css" />
+
+    <!-- jq読み込ませ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
+    <!-- ローディングアニメーション -->
+    <div id="loading-wrapper">
+      <div id="loading-text">LOADING</div>
+      <div id="loading-content"></div>
+    </div>
     <div id="service" class="service-kv page-top-kv">
       <header class="header wrapper">
         <div class="header-logo">
@@ -124,7 +132,7 @@
           <p class="font3">Weboolの3つの特徴</p>
         </div>
         <div class="feature-contents">
-          <div class="feature-item">
+          <div class="feature-item fadeRightTrigger">
             <div class="feature-img">
               <img src="../img/feature1.png" alt="feature1" />
               <div class="feature-txt-box">
@@ -143,7 +151,7 @@
               </div>
             </div>
           </div>
-          <div class="feature-item">
+          <div class="feature-item fadeLeftTrigger">
             <div class="feature-img">
               <img src="../img/feature2.png" alt="feature2" />
               <div class="feature-txt-box">
@@ -162,7 +170,7 @@
               </div>
             </div>
           </div>
-          <div class="feature-item">
+          <div class="feature-item fadeRightTrigger">
             <div class="feature-img">
               <img src="../img/feature3.png" alt="feature3" />
               <div class="feature-txt-box">
@@ -252,7 +260,11 @@
       </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
     <script type="text/javascript" src="../js/common.js"></script>
   </body>
 </html>

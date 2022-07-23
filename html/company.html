@@ -63,12 +63,31 @@
 
     <!-- cssファイル -->
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <!-- slick -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
     <link rel="stylesheet" type="text/css" href="../css/common1.css" />
     <link rel="stylesheet" type="text/css" href="../css/common2.css" />
     <link rel="stylesheet" type="text/css" href="../css/company.css" />
+    <!-- jq読み込ませ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
+    <!-- ローディングアニメーション -->
+    <div id="loading-wrapper">
+      <div id="loading-text">LOADING</div>
+      <div id="loading-content"></div>
+    </div>
+
     <div id="company" class="company-kv page-top-kv">
       <header class="header wrapper">
         <div class="header-logo">
@@ -111,9 +130,11 @@
         <div class="message-txt">
           <p class="font3">Web制作で事業をサポート</p>
           <p class="message-desc">
-            ホームページを制作することでお客様の目指している<br class="br-sp"> 目標や
-            叶えたい夢を実現できるように全力でサポートします。<br />
-            「新規事業を成功させたい」、「既存事業を成長させたい」など<br class="br-sp"> 
+            ホームページを制作することでお客様の目指している<br class="br-sp" />
+            目標や 叶えたい夢を実現できるように全力でサポートします。<br />
+            「新規事業を成功させたい」、「既存事業を成長させたい」など<br
+              class="br-sp"
+            />
             お客様の声を聞き、お客様一人ひとりに合った案を提案いたします。
           </p>
         </div>
@@ -123,7 +144,7 @@
       <section class="company-outline wrapper">
         <h3 class="sec-ttl page-sec-ttl font2">OUTLINE</h3>
         <div class="overview">
-          <ul class="overview-list">
+          <ul class="overview-list fadeRightTrigger">
             <li class="overview-item">
               <h4>社名</h4>
               <small></small>
@@ -155,7 +176,7 @@
             <li class="overview-item">
               <h4>従業員</h4>
               <small></small>
-              <p >32名<span class="employee">（2022年3月現在）</span></p>
+              <p>32名<span class="employee">（2022年3月現在）</span></p>
             </li>
             <li class="overview-item">
               <h4>事業内容</h4>
@@ -168,7 +189,7 @@
             </li>
           </ul>
 
-          <div class="overview-img-box">
+          <div class="overview-img-box fadeLeftTrigger">
             <div class="overview-img">
               <img src="../img/company-building.png" alt="" />
             </div>
@@ -282,8 +303,11 @@
       </div>
     </footer>
 
-    <!-- js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- JS -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
     <script type="text/javascript" src="../js/common.js"></script>
   </body>
 </html>
